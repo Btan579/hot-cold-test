@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: Lbe/+ICWPeekCVPxzw/7H1yYVQoJ5ikRi9iFbhiS7KOJXchLqfdpLXEMdxVXF4S45vVvUBCh5KnBhcTEPsIUs1s0mFbZ/YaxCiTzr0lu5qHHAvCtRcGVcm7ZPoY03pYhW3N8w++ugqgz2W3kArnKYHjbqkzwmiFP6uwZtT1tGUyAFqBrsmTsIh+aIxot3etxc5kvHs7gl1cN6mUpmyqTL9yb1qBMLv3aeQsqZEbiwOM18uUVKiqTMl1WXfkO/nflCKSpWDQxnMby7Fs5kJoM+vMjwUt7QYKtHet6WLzqEFBBVRJrpmc2NQndJWb5PwTgG99fVQCBzGISAtcvZexRDGFbCmDp7igXPzlRkVBaqU2nqWiAszAFee2FwDuvPSMrAUJG9VfjD4MwyuefJkCZi5yQDJPVdaUtEQGnNvKuBMm/0ybgfbof+65v7rPC4wKvAveV0HPgyZpaHUYs5SPyEUP29IJp8xJyiu3XfWO2BX3Hxhp/UQmnk6/i2lu7FtTMbgPwYsFdxJvOnulcFlb4GwuZGzC2t/Dug46zSw15qLIEJvOFKoinzrHWbitp1wsOweGvnFb7ef64TAqfMkTY1yHlqKL/PZN4Q5agblgalYQNNsD53zK7OOaGF1qJnSy/2GxRJqxPMX3e3bwdGzdhqa0UrIy1IT0tSKMbN9QcKbY=
+  app: hot-cold-test
+  on:
+    repo: Btan579/hot-cold-test
